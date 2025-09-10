@@ -40,15 +40,7 @@ const VoteButton = styled.button`
 const VoteOption = ({ name, votes, totalVotes, onVote }) => {
   const percentage = totalVotes > 0 ? ((votes / totalVotes) * 100).toFixed(2) : 0;
 
-  // Emojis para cada opción
-  const emojis = {
-    React: '⚛️',
-    Vue: '🖖',
-    Angular: '🅰️',
-    Svelte: '⚡',
-    Ember: '🔥',
-  };
-
+  
   return (
     <OptionContainer
       initial={{ opacity: 0, y: -20 }}
@@ -56,11 +48,11 @@ const VoteOption = ({ name, votes, totalVotes, onVote }) => {
       transition={{ duration: 0.5 }}
     >
       <OptionName>
-        {emojis[name]} {name}
+         {name}
       </OptionName>
       <span>{percentage}%</span>
       <VoteButton onClick={onVote}>
-        🗳️ Votar
+        Votar
       </VoteButton>
     </OptionContainer>
   );

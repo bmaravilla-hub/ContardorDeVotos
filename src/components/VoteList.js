@@ -93,7 +93,7 @@ const VoteList = () => {
     >
       {/* Columna izquierda: Lista de opciones para votar */}
       <VoteContainer>
-        <h1>🗳️ Contador de Votos</h1>
+        <h1>Contador de Votos</h1>
         {Object.entries(votes).map(([option, voteCount]) => (
           <VoteOption
             key={option}
@@ -103,12 +103,12 @@ const VoteList = () => {
             onVote={() => handleVote(option)}
           />
         ))}
-        <ResetButton onClick={handleReset}>🔄 Reiniciar Votos</ResetButton>
+        <ResetButton onClick={handleReset}>Reiniciar Votos</ResetButton>
       </VoteContainer>
 
       {/* Columna derecha: Gráfica de barras */}
       <ChartContainer>
-        <h2>📊 Resultados de Votación</h2>
+        <h2>Resultados de Votación</h2>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data}>
             <XAxis dataKey="name" />
