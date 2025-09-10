@@ -55,7 +55,7 @@ Generar build para producción:
 npm run build
 ```
 
-#☁️ Despliegue en AWS S3
+## ☁️ Despliegue en AWS S3
 
 1. Construir el proyecto con npm run build.
 2. Subir la carpeta build/ a un bucket de S3:
@@ -71,7 +71,7 @@ Configurar el bucket en Static website hosting:
 
 Acceder mediante la URL pública del bucket.
 
-#👩‍💻 Autora
+## 👩‍💻 Autora
 
 Proyecto desarrollado por Blanca Maravilla
 
